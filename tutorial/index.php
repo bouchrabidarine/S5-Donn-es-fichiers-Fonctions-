@@ -6,5 +6,6 @@ require_once 'fonctions.php';
 $articles = get_derniers_articles();
 $categories = get_categories();
 
-// 3. Délégation de l'affichage au template HTML
-require 'index-template.php';
+
+echo "Articles trouvés : " . count($articles) . "\n";
+echo "Catégories trouvées : " . count($categories) . "\n";
